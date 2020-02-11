@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/bootstrap.min"></script>
+ 	<script type="text/javascript" src="js/jquery-3.1.1.min"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="validate.js"></script>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.min.css" rel="stylesheet">
+    <link href="css/business-casual.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<style>
+ .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+</style>
+</head>
+<body>
+
+
+<!-- TITULO DO SITE -->
+<h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3"></span>
+      <span class="site-heading-lower">FoodBox</span>
+    </h1>
+
+
+    <!-- NAVBAR -->
+   <nav class="navbar navbar-expand-lg sticky-top navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item  px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Pagina Inicial
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item  px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="Perguntas.html">Perguntas Frequentes</a>
+            </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="#">Assinar</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="produtos.html">Produtos Anteriores</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="Politica.html">Politica de Privacidade</a>
+            </li>
+             <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="Contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<br>
+<br>
+
+<script type="text/javascript">
+ function troca(){
+
+valor = document.getElementById('Plano').value;
+
+valortexto = document.getElementById('texto').value;
+
+ 
+
+if(valor == 'nada'){
+
+document.getElementById('texto').value = "";
+
+}
+
+ 
+
+if(valor == 1){
+
+document.getElementById('texto').value = "R$ 36,00";
+
+}
+
+ 
+
+if(valor == 2){
+
+document.getElementById('texto').value = "R$ 216,00";
+
+}
+
+ 
+
+if(valor == 3){
+
+document.getElementById('texto').value = "R$ 420,00";
+
+}
+
+ 
+
+}
+</script>
+
+
+
+  <section class="page-section about-heading">
+      <div class="container">
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Assinatura </span>
+                  
+                </h2>
+                  Faça o sua assinatura através do formulário
+                  <hr>
+
+
+              <form id="formularioCadastro" action="" method="POST">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <label for="nome">(*) Nome:</label>
+                      <input type="text" class="form-control" width="32" placeholder="Insira seu nome aqui" required>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="sobrenome">(*) Sobrenome:</label>
+                      <input type="text" class="form-control" id="sobrenome" width="32" placeholder="Insira seu sobrenome aqui" required>
+                    </div>                    
+                  </div>
+                <br>
+                <div class="row">
+                  <div class="col-5">
+                    <label for="example-date-input">(*) Data de nascimento</label>
+                      <input class="form-control" type="date"  id="example-date-input" required>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-5">
+                    <label for="email">(*) Email:</label><input type="email" class="form-control" name="email" placeholder="Insira seu email aqui" required>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="cpf">(*) CPF:</label>
+                    <input type="text" class="form-control" name="cpf" placeholder="000.000.000-00" onBlur="ValidarCPF(formularioCadastro.cpf);" onKeyPress="MascaraCPF(formularioCadastro.cpf);" maxlength="14">
+                  </div>
+                  <br>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-sm-5">
+                    <label for="email">(*) RG:</label><input type="text" class="form-control" name="RG" placeholder="Insira seu RG aqui" maxlength="12" onKeyPress="MascaraRG(formularioCadastro.rg);">
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="cep">(*) CEP:</label>
+                      <input type="text" class="form-control" name="cep" placeholder="00.000-000" onKeyPress="MascaraCep(formularioCadastro.cep);" onBlur="ValidaCep(formularioCadastro.cep)">
+                     
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-sm-5">
+                    <label for="Estado">(*) Estado:</label><input type="text" class="form-control" name="estado" placeholder="Insira nome do seu estado aqui" required>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="Cidade">(*) Cidade:</label>
+                      <input type="text" class="form-control" name="Cidade" placeholder="Insira o nome da sua Cidade aqui" required>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-sm-5">
+                    <label for="Rua">(*) Rua:</label><input type="text" class="form-control" name="Rua" placeholder="Insira seu endereço aqui" required>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="Bairro">(*) Bairro:</label>
+                      <input type="text" class="form-control" name="bairro" placeholder="Insira o nome do seu bairro aqui">
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-sm-5">
+                    <label for="numero">(*) Número:</label><input type="text" class="form-control" name="numero" placeholder="Insira o número da sua residencia aqui" required>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="complemento">Complemento:</label>
+                      <input type="text" class="form-control" name="complemento" placeholder="Insira complemento aqui">
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-sm-5">
+                    <label for="telefone">Telefone:</label><input type="text" class="form-control" name="telefone" placeholder="(DDD) 0000-0000">
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="Celular">Celular:</label>
+                      <input type="text" class="form-control" name="Celular" placeholder="(DDD) 0 0000-0000">
+                    </div>
+                  </div>
+                    <br>
+                    <div class="row">
+                      <div class="col-sm-5">
+                          <label for="Plano">(*) Escolha um Plano:</label>
+                            <select class="custom-select" name="kb" id="Plano" onblur="troca()" required="">
+                              <option value="nada">Escolha um Plano</option>
+                              <option value="1">1 mês</option>
+                              <option value="2">Semestral (6 meses)</option>
+                              <option value="3">Anual (1 ano)</option>
+                            </select>
+                        </div>
+                    </div>
+                   <br> 
+                   <div class="row"> 
+                     <div class="col-sm-5">
+                          <label for="Preco">Valor a ser cobrado:</label>
+                          <input type="text" class="form-control" id="texto" name="texto" disabled/>
+                          
+                      </div>    
+
+                   </div>
+                       
+                <br><br>
+                <h1>Forma de Pagamento</h1>
+                <hr>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Cartão de Crédito</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Boleto</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label for="Agencia">Agência:</label><input type="text" class="form-control" name="Agencia" placeholder="0000" maxlength="4"  onkeyup='if (isNaN(this.value)) {this.value = ""}' required>
+
+                        </div>
+                        <div class="col-sm-5">
+                          <label for="NumCartao">Número do Cartão:</label><input type="text" class="form-control" name="numCartao" placeholder="0000 0000 0000 0000"
+                          onKeyPress="Mascaracartao(formularioCadastro.numCartao);" onBlur="Validadanumcartao(formularioCadastro.numCartao)"     required>
+                        </div>
+                        <div class="col-sm-3">
+                          <label for="Vencimento">Vencimento:</label><input type="text" class="form-control" name="dataVencimento" placeholder="mm/aa" onKeyPress="Mascaradatavencimento(formularioCadastro.dataVencimento);" onBlur="Validadatavencimento(formularioCadastro.dataVencimento)"   required>
+                        </div>                        
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label for="codSeg">Cód. Segurança:</label><input type="text" class="form-control" name="codSeg" placeholder="000" onKeyPress="MascaraCodSeg(formularioCadastro.codSeg);" onKeyPress="MascaraCodSeg(formularioCadastro.codSeg)" onkeyup='if (isNaN(this.value)) {this.value = ""}' maxlength="3"  required>
+                        </div>
+                        <div class="col-sm-5">
+                          <label for="Agencia">Nome do Titular:</label><input type="text" class="form-control" name="Agencia" placeholder="Nome do Titular" required>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                          <label class="form-check-label" for="invalidCheck3">
+                            Concordo com os <a href="termos.html">termos e condições</a>
+                          </label>
+                        </div>  
+                      </div>    
+                    </div> 
+
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                      <br>
+                      <button type="submit" class="btn btn-primary">Gerar Boleto</button>
+                    </div>
+                    
+                </div>            
+                <br><br>
+
+                 <button type="submit" class="btn btn-primary">Assinar!</button>
+                </div>  
+              </form>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </section>
+
+
+
+
+
+<script type="text/javascript">
+
+function Mascaracartao(numCartao){
+
+                if(mascaraInteiro(numCartao)==false){
+                  event.returnValue = false;
+        }       
+        return formataCampo(numCartao, '0000 0000 0000 0000', event);
+}
+
+function Validadanumcartao(numCartao){        
+        exp = /\d{4}\ \d{4}\ \d{4}\ \d{4}/
+        if(!exp.test(numCartao.value))
+                alert('Numero do cartão Invalida');               
+}   
+
+
+function Mascaradatavencimento(dataVencimento){
+
+                if(mascaraInteiro(dataVencimento)==false){
+                  event.returnValue = false;
+        }       
+        return formataCampo(dataVencimento, '00/00', event);
+}
+
+function Validadatavencimento(dataVencimento){        
+        exp = /\d{2}\/\d{2}/
+        if(!exp.test(dataVencimento.value))
+                alert('Data de vencimento Invalida');               
+}
+
+
+
+
+function MascaraCep(cep){
+                if(mascaraInteiro(cep)==false){
+                  event.returnValue = false;
+        }       
+        return formataCampo(cep, '00.000-000', event);
+}
+
+function ValidaCep(cep){        
+        exp = /\d{2}\.\d{3}\-\d{3}/
+        if(!exp.test(cep.value))
+                alert('Numero de CEP Invalido!');               
+}
+
+function MascaraCPF(cpf){
+        if(mascaraInteiro(cpf)==false){
+                event.returnValue = false;
+        }       
+        return formataCampo(cpf, '000.000.000-00', event);
+}
+
+function ValidarCPF(cpf){
+       exp = /\d{3}\.\d{3}\.{3}\-\d{2}/
+        if(!exp.test(cpf.value))
+                alert('Numero de CPF Invalido!');   
+/*
+        var cpf = Objcpf.value;
+        exp = /\.|\-/g
+        cpf = cpf.toString().replace( exp, "" ); 
+        digitoDigitado = eval(cpf.charAt(9)+cpf.charAt(10));
+        soma1=0, soma2=0;
+        vlr =11;
+
+        for(i=0;i<9;i++){
+                soma1+=eval(cpf.charAt(i)*(vlr-1));
+                soma2+=eval(cpf.charAt(i)*vlr);
+                vlr--;
+        }       
+        soma1 = (((soma1*10)%11)==10 ? 0:((soma1*10)%11));
+        soma2=(((soma2+(2*soma1))*10)%11);
+
+        var digitoGerado=(soma1*10)+soma2;
+        if(digitoGerado!=digitoDigitado)        
+                alert('CPF Invalido!');  */       
+}
+
+
+
+
+function MascaraRG(rg){
+        if((rg)==false){
+                event.returnValue = false;
+        }       
+        return formataCampo(rg, '00.000.000-0', event);
+}
+
+function MascaraTelefone(tel){  
+        if(mascaraInteiro(tel)==false){
+                event.returnValue = false;
+        }       
+        return formataCampo(tel, '(00) 0000-0000', event);
+}
+
+function ValidaTelefone(tel){
+        exp = /\(\d{2}\)\ \d{4}\-\d{4}/
+        if(!exp.test(tel.value))
+                alert('Numero de Telefone Invalido!');
+}
+
+
+function MascaraData(data){
+        if(mascaraInteiro(data)==false){
+                event.returnValue = false;
+        }       
+        return formataCampo(data, '00/00/0000', event);
+}
+
+
+
+function ValidaData(data){
+        exp = /\d{2}\/\d{2}\/\d{4}/
+        if(!exp.test(data.value))
+                alert('Data Invalida!');                        
+}
+
+
+
+
+function formataCampo(campo, Mascara, evento) { 
+        var boleanoMascara; 
+
+        var Digitato = evento.keyCode;
+        exp = /\-|\.|\/|\(|\)| /g
+        campoSoNumeros = campo.value.toString().replace( exp, "" ); 
+
+        var posicaoCampo = 0;    
+        var NovoValorCampo="";
+        var TamanhoMascara = campoSoNumeros.length;; 
+
+        if (Digitato != 8) { // backspace 
+                for(i=0; i<= TamanhoMascara; i++) { 
+                        boleanoMascara  = ((Mascara.charAt(i) == "-") || (Mascara.charAt(i) == ".")
+                                                                || (Mascara.charAt(i) == "/")) 
+                        boleanoMascara  = boleanoMascara || ((Mascara.charAt(i) == "(") 
+                                                                || (Mascara.charAt(i) == ")") || (Mascara.charAt(i) == " ")) 
+                        if (boleanoMascara) { 
+                                NovoValorCampo += Mascara.charAt(i); 
+                                  TamanhoMascara++;
+                        }else { 
+                                NovoValorCampo += campoSoNumeros.charAt(posicaoCampo); 
+                                posicaoCampo++; 
+                          }              
+                  }      
+                campo.value = NovoValorCampo;
+                  return true; 
+        }else { 
+                return true; 
+        }
+}
+
+
+
+
+</script>
+
+
+
+
+<br>
+<br>
+<!-- Footer -->
+<footer class="footer font-small special-color-dark pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+          <!-- Form -->
+          <form class="form-inline">
+            <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </form>
+          <!-- Form -->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+          <form class="input-group">
+            <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-white" type="button">Sign up</button>
+            </div>
+          </form>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> foodbox.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+</body>
+</html>
